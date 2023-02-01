@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1. React.createElement() -> React element
+        2. So sanh voi document.createElement() -> DOM element
+        3. Thay doi: id, className, style,...
+        4. Them: text, HTML
+        5. Tao:
+            <h1> title="Hello" class="heading">Hello guys!</h1>
+        6. Tao:
+            <ul>
+                <li>Javascript</li>
+                <li>React</li>
+            </ul>
+        7. Tao:
+            <div class="post-item">
+                <h2 title="Hoc React tai F8">Hoc ReactJS</h2>
+                <p>Hoc ReactJS tu co ban toi nang cao </p>
+            </div>
+     -->
+
+     <script>
+        // DOM
+        const h1DOM = document.createElement('h1')
+
+        h1DOM.title = 'Hello';
+        h1DOM.className = 'heading';
+
+        h1DOM.innerHTML = 'Hello guys!';
+
+        document.body.appendChild(h1DOM);
+
+     </script>
+</body>
+</html>
