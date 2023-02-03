@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- <div id="app"></div>
+        <script type="text/babel">
+
+            //Function component
+            function Header() {
+                return (
+                    <div className="header">New Header</div>
+                )
+            }
+
+            //Class component
+            class Content extends React.Component {
+                render() {
+                    return <div className="content">New Content</div>
+                }
+            }
+
+            const app = (
+                <div className="wrapper">
+                    <Header />
+                    <Content />
+                    <div className="footer">Footer</div>
+                </div>
+            )
+
+            ReactDOM.render(app, document.getElementById('app'))
+        </script> -->
+    
+    <div id="bt"></div>
+
+    <script type="text/babel">
+        function PostItem() {
+            return (
+                <div className="post-item">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.wikipedia.org%2Fwiki%2FLisa_%2528rapper%2529&psig=AOvVaw2ApvUEOgCz7Pnwll6svtbL&ust=1675502218979000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPDYuaaC-fwCFQAAAAAdAAAAABAE" alt="anh"></img>
+                    <h2 className="post-title">title</h2>
+                    <p className="post-desc">post desc</p>
+                    <p className="post-desc2">post desc2</p>
+                </div>
+            )
+        }
+
+        console.log(<PostItem />)
+        function Bt  () {
+            return (
+            <div id="wrapper">
+                <PostItem></PostItem>
+                <PostItem></PostItem>
+                <PostItem></PostItem>
+            </div>
+        )}
+
+        ReactDOM.render(<Bt />, document.getElementById('bt'))
+    </script>
+</body>
+</html>
